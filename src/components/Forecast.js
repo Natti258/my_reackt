@@ -1,5 +1,6 @@
 import React from "react";
-import axios from "axios";
+
+
 
 function Forecast({ data }) {
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
