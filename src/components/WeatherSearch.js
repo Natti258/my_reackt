@@ -12,15 +12,14 @@ function WeatherSearch() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
       const weatherResponse = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=59a99bf814c1d687d082fbb625caab0c`
       );
       setWeatherData(weatherResponse.data);
       setError(null);
 
       const forecastResponse = await axios.get(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=59a99bf814c1d687d082fbb625caab0c`
       );
       setForecastData(forecastResponse.data);
     } catch (error) {
