@@ -1,2 +1,10 @@
-# Auto detect text files and perform LF normalization
+# Убедитесь, что все текстовые файлы используют LF как окончание строки
 * text=auto
+
+# Убедитесь, что конкретные файлы используют LF как окончание строки
+*.js text eol=lf
+*.jsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
