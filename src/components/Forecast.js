@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 function Forecast({ data }) {
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const today = new Date();
